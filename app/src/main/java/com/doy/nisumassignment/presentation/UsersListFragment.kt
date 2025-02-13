@@ -117,7 +117,12 @@ class UsersListFragment : Fragment() {
 
                 Button(
                     onClick = {
-                        viewModel.fetchUsers(countEntered) },
+                        println("Value = $countEntered")
+                        if (countEntered <= 0)
+                            viewModel.updateResponseFailed("Please Enter Number")
+                        else
+                            viewModel.fetchUsers(countEntered)
+                    },
                     modifier = Modifier
                         .width(100.dp)
                         .height(62.dp)
