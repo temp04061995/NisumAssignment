@@ -54,6 +54,12 @@ dependencies {
     implementation(libs.bundles.compose)
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.androidx.navigation.ui)
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.accompanist.pager)
+    implementation(libs.accompanist.pager.indicators)
     debugImplementation(libs.bundles.compose.debug)
 
     coreLibraryDesugaring(libs.desugar.jdk.libs)

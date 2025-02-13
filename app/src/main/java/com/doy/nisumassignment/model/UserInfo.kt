@@ -1,6 +1,6 @@
 package com.doy.nisumassignment.model
 
-data class ApiResponse(
+data class UsersApiResponse(
     val results: List<User>,
     val info: Info
 )

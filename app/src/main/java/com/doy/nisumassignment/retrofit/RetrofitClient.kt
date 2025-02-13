@@ -1,11 +1,11 @@
-package com.doy.nisumassignment
+package com.doy.nisumassignment.retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
 
-    private const val BASE_URL = "https://randomuser.me/api/"
+    private const val BASE_URL = "https://randomuser.me/"
 
 
     val retrofit: Retrofit by lazy {
@@ -18,7 +18,7 @@ object RetrofitClient {
 
     object ApiClient {
         val apiService: ApiService by lazy {
-            RetrofitClient.retrofit.create(ApiService::class.java)
+            retrofit.create(ApiService::class.java)
         }
     }
 
