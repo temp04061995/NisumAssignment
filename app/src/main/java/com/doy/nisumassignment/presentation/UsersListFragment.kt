@@ -96,6 +96,7 @@ class UsersListFragment : Fragment() {
 
                 TextField(
                     value = if (countEntered == 0) "" else "$countEntered",
+                    label = { Text(text = "Enter Number") },
                     onValueChange = { updatedText ->
 
                         countEntered = if (updatedText.isNotEmpty() && isNumeric(updatedText)) {
